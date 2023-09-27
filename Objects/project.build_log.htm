@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Matheus de Lima Silva, Tufts University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\mathe\OneDrive\Área de Trabalho\EE14\SysTick\project.uvprojx
+Project File Date:  03/15/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+main.c(46): warning:  #1166-D: returning pointer to local variable
+  	return arr;
+main.c(59): warning:  #223-D: function "sprintf" declared implicitly
+  	sprintf(scoreStr, "%d", score);
+main.c(61): warning:  #223-D: function "strncat" declared implicitly
+  	strncat(msg, &scoreStr, 3);
+main.c(63): warning:  #223-D: function "LCD_DisplayText" declared implicitly
+  	LCD_DisplayText(msg, 25);
+main.c(111): warning:  #223-D: function "readInp" declared implicitly
+  		if (readInp() == randArr[i]) {
+main.c(69): warning:  #177-D: variable "strArr"  was declared but never referenced
+  	char strArr[6];
+main.c(147): warning:  #223-D: function "malloc" declared implicitly
+  	str = (char*) malloc(25);
+main.c(164): warning:  #223-D: function "strcpy" declared implicitly
+  	strcpy(str, "Press to start");
+main.c(165): warning:  #223-D: function "startScreen" declared implicitly
+  	randNum = startScreen(str, 14);
+main.c(139): warning:  #177-D: variable "startBool"  was declared but never referenced
+  	bool startBool = 0;
+main.c(141): warning:  #177-D: variable "time"  was declared but never referenced
+  	int time = 0; 
+main.c(144): warning:  #177-D: variable "inputNum"  was declared but never referenced
+  	int inputNum;
+main.c(145): warning:  #177-D: variable "inputNumStr"  was declared but never referenced
+  	char inputNumStr;
+main.c(146): warning:  #177-D: variable "ptr"  was declared but never referenced
+  	char * ptr;
+main.c: 14 warnings, 0 errors
+linking...
+Program Size: Code=6172 RO-data=520 RW-data=8 ZI-data=5472  
+FromELF: creating hex file...
+".\Objects\project.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L4xx_DFP.2.6.1.pack
+                Keil.STM32L4xx_DFP.2.6.1
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\mathe\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\mathe\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
